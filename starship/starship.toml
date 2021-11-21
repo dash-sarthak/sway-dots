@@ -1,0 +1,22 @@
+# starship config
+
+add_newline = true
+
+[character]
+success_symbol = "[➜](bold yellow)"
+
+[battery]
+format = "[$symbol$percentage]($style) "
+full_symbol = "🔋 "
+discharging_symbol = "⚡️ "
+charging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 100
+style = "bold yellow"
+
+[rust]
+format = "via [$symbol($version )]($style)"
+symbol = "🐢 "
+style = "bold yellow"
+
